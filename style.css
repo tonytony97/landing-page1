@@ -9,13 +9,15 @@ body{
 .body{
     flex:1;
     display: flex;
+    flex-direction: column;
 }
 
 .header{
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 .logo{
@@ -23,7 +25,7 @@ body{
     color: #F9FAF8;
 }
 
-a, .info{
+a, .info {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -32,13 +34,21 @@ a, .info{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
 }
 
+.hero{
+    display: flex;
+    flex-direction: column;
+}
 .content1, .footer{
     background-color: #1F2937;
 }
 
-.sign-top, .sign-bot, .content4{
+.sign-top, .sign-bot, .call-box{
     background-color: #3882F6;
 }
 
@@ -48,8 +58,31 @@ a, .info{
     color: #1F2937;
 }
 
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.cubes{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
 .content3{
     background-color: #E5E7EB;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .quote{
@@ -59,17 +92,73 @@ a, .info{
     color: #1F2937;
 }
 
+.author{
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.content4{
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.call-box{
+    border-radius: 5px;
+    height: 100px;
+    width: 650px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-sign{
+    color: #F9FAF8;
+    font-weight: bold;
+
+}
+
+.text-inst{
+    color: #F9FAF8;
+
+}
+
 .footer{
+    color: #F9FAF8;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    padding: 4px 20px;
+    border-radius: 5px;
+}
+
+.sign-top, .sign-bot{
+    color: #F9FAF8;
+}
+
+.sign-top {
+    border: 2px solid #1F2937;
+}
+
+.sign-bot {
+    border: 2px solid #F9FAF8;
 }
 
 ul{
    display: flex;
-    list-style-type: none;
+   list-style-type: none;
+   gap: 16px;
 }
 
 a{
     text-decoration: none;
+    
 }
