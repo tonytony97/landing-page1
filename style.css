@@ -6,6 +6,14 @@ body{
     flex-direction: column;
 }
 
+.pic{
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+    border:2px solid #3882F6 ;
+    margin: 5px;
+}
+
 .body{
     flex:1;
     display: flex;
@@ -62,18 +70,30 @@ a, .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 100px;
+    justify-content: center;
+    padding: 50px;
 }
 
 .cubes{
     padding: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    justify-content: center;
 }
 
+.cube{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
 
+.subtext{
+    max-width: 100px;
+    text-align: center;
+    
+}
 
 .content3{
     background-color: #E5E7EB;
@@ -82,7 +102,14 @@ a, .info {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.poetry{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+
 }
 
 .quote{
@@ -90,11 +117,16 @@ a, .info {
     font-weight: lighter;
     font-style:italic;
     color: #1F2937;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
 }
 
 .author{
     font-weight: bold;
-    margin-left: auto;
+    display: block;
+    align-self: end;
 }
 
 .content4{
@@ -102,12 +134,13 @@ a, .info {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .call-box{
     border-radius: 5px;
     height: 100px;
-    width: 650px;
+    width: 750px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     display: flex;
     align-items: center;
